@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Foto di sfondo */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=85"
+          src="/camera-principale.webp"
           alt="A Meusa — Casa Vacanze Palermo"
           className="w-full h-full object-cover object-center"
         />
