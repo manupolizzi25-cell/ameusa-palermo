@@ -51,8 +51,8 @@ export default function Hero() {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
           {[
             { icon: Star,  label: '4.95', sub: '48 recensioni' },
-            { icon: Users, label: '6 ospiti', sub: 'max' },
-            { icon: Bed,   label: '3 camere', sub: 'da letto' },
+            { icon: Users, label: '4 ospiti', sub: 'max' },
+            { icon: Bed,   label: '2 camere', sub: 'da letto' },
           ].map(({ icon: Icon, label, sub }) => (
             <div key={label} className="flex items-center gap-2.5 bg-black/30 backdrop-blur-sm text-white px-4 py-2.5 rounded-xl border border-white/15">
               <Icon className="w-4 h-4 text-gold-400 flex-shrink-0" />
