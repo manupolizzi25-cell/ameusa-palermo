@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #222;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+  }
+  .section-title {
+    @apply text-3xl font-bold text-gray-900 mb-2;
+  }
+  .section-subtitle {
+    @apply text-gray-500 text-lg mb-8;
+  }
+}
+
+/* react-day-picker custom styles */
+.rdp {
+  --rdp-accent-color: #e66010;
+  --rdp-background-color: #fff7f0;
+  margin: 0;
+}
+
+.rdp-day_selected,
+.rdp-day_selected:hover {
+  background-color: #e66010 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.rdp-day_range_middle {
+  background-color: #ffedd8 !important;
+  color: #e66010 !important;
+  border-radius: 0 !important;
+}
+
+.rdp-day_range_start,
+.rdp-day_range_end {
+  background-color: #e66010 !important;
+  color: white !important;
+}
+
+.rdp-day:hover:not(.rdp-day_disabled):not(.rdp-day_selected) {
+  background-color: #ffedd8 !important;
+  border-radius: 50%;
+}
+
+.rdp-caption_label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.rdp-day_disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
