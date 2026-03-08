@@ -72,7 +72,7 @@ export default function BookingCalendar() {
   }
 
   return (
-    <section id="calendar" className="py-20 bg-terra-50">
+    <section id="calendar" className="py-20 bg-gold-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -161,7 +161,7 @@ export default function BookingCalendar() {
 
             {/* Nights summary */}
             {canBook && (
-              <div className="bg-terra-50 rounded-2xl p-4 mb-5 animate-fade-in">
+              <div className="bg-gold-50 rounded-2xl p-4 mb-5 animate-fade-in">
                 <div className="flex justify-between items-center mb-2">
                   <div className="flex items-center gap-2 text-gray-600 text-sm">
                     <Moon className="w-4 h-4" />
@@ -169,7 +169,7 @@ export default function BookingCalendar() {
                   </div>
                   <span className="font-semibold text-gray-900">€{total}</span>
                 </div>
-                <div className="border-t border-terra-200 pt-2 mt-2 flex justify-between items-center">
+                <div className="border-t border-gold-200 pt-2 mt-2 flex justify-between items-center">
                   <div className="flex items-center gap-2 font-bold text-gray-900">
                     <Euro className="w-4 h-4" />
                     Totale
@@ -311,7 +311,7 @@ export default function BookingCalendar() {
                   </div>
 
                   {/* Riepilogo */}
-                  <div className="bg-terra-50 rounded-2xl p-4 text-sm">
+                  <div className="bg-gold-50 rounded-2xl p-4 text-sm">
                     <div className="flex justify-between mb-1 text-gray-600">
                       <span>Check-in</span>
                       <span className="font-medium text-gray-900">{format(range.from, 'EEEE d MMMM yyyy', { locale: it })}</span>
@@ -320,7 +320,7 @@ export default function BookingCalendar() {
                       <span>Check-out</span>
                       <span className="font-medium text-gray-900">{format(range.to, 'EEEE d MMMM yyyy', { locale: it })}</span>
                     </div>
-                    <div className="flex justify-between font-bold text-gray-900 border-t border-terra-200 mt-2 pt-2">
+                    <div className="flex justify-between font-bold text-gray-900 border-t border-gold-200 mt-2 pt-2">
                       <span>Totale stimato</span>
                       <span>€{total}</span>
                     </div>

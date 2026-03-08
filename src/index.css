@@ -26,7 +26,7 @@
     @apply bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg;
   }
   .btn-outline {
-    @apply border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200;
+    @apply border-2 border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200;
   }
   .section-title {
     @apply text-3xl font-bold text-gray-900 mb-2;
@@ -38,32 +38,32 @@
 
 /* react-day-picker custom styles */
 .rdp {
-  --rdp-accent-color: #e66010;
-  --rdp-background-color: #fff7f0;
+  --rdp-accent-color: #006e6a;
+  --rdp-background-color: #f0faf9;
   margin: 0;
 }
 
 .rdp-day_selected,
 .rdp-day_selected:hover {
-  background-color: #e66010 !important;
+  background-color: #006e6a !important;
   color: white !important;
   border-radius: 50%;
 }
 
 .rdp-day_range_middle {
-  background-color: #ffedd8 !important;
-  color: #e66010 !important;
+  background-color: #cceeec !important;
+  color: #006e6a !important;
   border-radius: 0 !important;
 }
 
 .rdp-day_range_start,
 .rdp-day_range_end {
-  background-color: #e66010 !important;
+  background-color: #006e6a !important;
   color: white !important;
 }
 
 .rdp-day:hover:not(.rdp-day_disabled):not(.rdp-day_selected) {
-  background-color: #ffedd8 !important;
+  background-color: #f0faf9 !important;
   border-radius: 50%;
 }
 
