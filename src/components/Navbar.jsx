@@ -30,7 +30,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center">
-            <Logo variant={scrolled ? 'dark' : 'light'} />
+            <img
+              src="/logo-removebg-preview.png"
+              alt="A Meusa — Casa Vacanze"
+              className="h-12 md:h-14 w-auto"
+              style={{ filter: scrolled ? 'none' : 'brightness(0) invert(1)' }}
+            />
           </a>
 
           {/* Desktop nav */}
